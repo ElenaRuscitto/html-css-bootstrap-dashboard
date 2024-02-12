@@ -1,4 +1,54 @@
+:root {
+  --text-color-header: rgb(139, 139, 139);
+  --text-color-header-icon: rgb(91, 88, 88);
+  --text-color-header-icon-bell: rgb(255, 143, 0);
+}
+
+
 
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+
+/* HEADER */
+
+header {
+  height: 70px;
+  width: 100vw;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  color: var(--text-color-header);
+}
+
+.search-bar{
+  width: 70%;
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+}
+
+header .logo,
+header .icon {
+  width: 10% ;
+}
+
+input {
+  width: 100%;
+}
+
+.icon .btn i {
+  color: var(--text-color-icon) !important;
+}
+
+.icon .btn .fa-bell {
+  color: var(--text-color-icon-bell) !important;
+}
+
+/* /HEADER */
+
+
+/* ASIDE */
+
+
+/* /ASIDE */
