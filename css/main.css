@@ -114,10 +114,10 @@ main .er-container{
 
 /* CONTENT */
 .box {
- border: 1px solid rgb(208, 208, 208);
- background-color: rgb(247, 247, 247);
- /* margin: 10px; */
- padding-left: 10px;
+ border: 1px solid rgb(228, 231, 234);
+ /* background-color: rgb(247, 247, 247); */
+ margin-bottom: 10px;
+ overflow: hidden;
 }
 
 /* PROSSIME CLASSI */
@@ -138,6 +138,7 @@ main .er-container{
 
 .divisore-big {
   border-bottom: 2px solid rgb(228, 231, 234);
+  padding-left: 0;
 }
 
 
