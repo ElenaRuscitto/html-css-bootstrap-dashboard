@@ -114,11 +114,19 @@ main .er-container{
 
 /* CONTENT */
 .box {
- border: 1px solid rgb(228, 231, 234);
- /* background-color: rgb(247, 247, 247); */
+ border: 1px solid rgb(220, 220, 220);
+ background-color: rgb(247, 247, 247);;
  margin-bottom: 10px;
  overflow: hidden;
 }
+
+.box-todo {
+  border: 1px solid rgb(220, 220, 220);
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: ;
+ }
 
 /* PROSSIME CLASSI */
 .image-logo{
@@ -134,11 +142,17 @@ main .er-container{
 
 .divisore {
   border-bottom: 1px solid rgb(228, 231, 234);
+  margin: 0 10px;
 }
 
 .divisore-big {
   border-bottom: 2px solid rgb(228, 231, 234);
   padding-left: 0;
+}
+
+.divisore-reverse {
+  border-bottom: 1px solid rgb(228, 231, 234);
+
 }
 
 
