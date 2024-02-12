@@ -69,12 +69,12 @@ aside {
   left: 0;
   z-index: 9998;
 }
-/* .container {
+.container {
   display: flex;
   flex-direction: column;
-} */
+}
   
-/* .aside-top {
+ .aside-top {
   display: flex;
   align-items: start;
   display: inline;
@@ -89,38 +89,37 @@ aside {
 
 /* TOP BLU */
 
-  .er-container{
-    width: 90%;
-    margin-left: 150px;
-  }
+main .er-container{
+  width: 90%;
+  margin-left: 150px;
+ } 
+.margin-main{
+  margin-left: 150px;
+}
   
-  .top-blu {
-    background-color: rgb(27, 114, 232);
-    height: 20%;
-    width: 100%;
-    margin-top: 70px;
-    padding-left: 10px;
-  }
+.top-bar {
+  background-color: rgb(27, 114, 232);
+  height: 20%;
+  width: 100%;
+  margin-top: 70px;
+} 
 
-
-  .col-sx {
-    width: 65%;
-    background-color: #cf5b5b;
-    height: 100%;
-  }
-
-  .col-dx {
-    width: 35%;
-    background-color: #d1e24b;
-    height: 100%;
-  }
 /* /TOP BLU */
 
 
-.content {
-  /* margin-top: 70px; */
-  margin-left: 150px;
+/* CONTENT */
+.box {
+ border: 1px solid rgb(208, 208, 208);
+ background-color: rgb(247, 247, 247);
+ /* margin: 10px; */
+ padding-left: 10px;
 }
+
+/* PROSSIME CLASSI */
+.box img {
+  width: 20px;
+}
+
 
 
 
