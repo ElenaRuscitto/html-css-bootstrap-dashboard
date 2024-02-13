@@ -48,17 +48,26 @@
   
         <div class="icon d-flex ">
           <div class="icon-none">
-            <a href=""><i class="fa-solid fa-list px-2"></i></a>
+            <a href=""><i class="fa-solid fa-list"></i></a>
       
             <a href=""><i class="fa-solid fa-circle-question px-2"></i></a>
          
-            <a href=""><i class="fa-solid fa-ellipsis-vertical px-2"></i></a>
+            <a><i class="fa-solid fa-ellipsis-vertical"></i></a>
           </div>
-      
-                 
-          <div class="notifiche">
-            <a href=""><i class=" notifiche fa-solid fa-bell px-2"></i></a>
+
+
+          <div class="dropdown notifiche">
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class=" notifiche fa-solid fa-bell"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end mb-1">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item " href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item " href="#">Logout</a></li>
+
+            </ul>
+
           </div>
+                      
+
         </div>
   
       </div>
@@ -143,29 +152,28 @@
               <div class="box mt-2 rounded-2">
                 <h4 class="py-2 ps-3 mt-2">Prossime Classi</h4>
                 <div class="divisore-big"></div>
-
+                <!-- tabella -->
                 <div class="table-responsive-md overflow-x-hidden text-center w-100 ">
-                  <table class="table table-hover h-100 table-sm">
+                  <table class="table table-hover h-100 table-sm table-md">
                     <thead class="h-100 ">
+                     <!-- 0 -->
                       <tr>
-                        <th class="text-start px-3" style="width: 50%;" scope="col">Nome</th>
-                        <th style="width: 20%;" scope="col">Data Inizio</th>
-                        <th style="width: 5%;" scope="col">ROI</th>
-                        <th style="width: 10%;" scope="col">Stato</th>
-                        <th style="width: 15%;" scope="col">Azioni</th>
+                        <th class="text-start px-3" scope="col">Nome</th>
+                        <th class="w-data d-sm-none d-md-table-cell">Data Inizio</th>
+                        <th class="w-roi d-sm-none d-md-table-cell">ROI</th>
+                        <th class="w-stato">Stato</th>
+                        <th class="w-azioni">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td scope="row " class="px-3 text-star d-flex py-3">
-                          <div class="image-logo">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 75</span>
-                          
+                        <!-- 1 -->
+                        <td scope="row " class="text-start px-3">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 75</span> 
                         </td>
-                        <td>15 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -176,17 +184,14 @@
                           </button>
                         </td>
                       </tr>
-                      
+                      <!-- 2 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 76</span>
-                          
+                        <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 76</span>
                         </td>
-                        <td>16 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">16 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -197,16 +202,14 @@
                           </button>
                         </td>
                       </tr>
-  
+                      <!-- 3 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 77</span>                        
+                        <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 77</span>                        
                         </td>
-                        <td>17 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge bg-warning ">Process</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -217,17 +220,14 @@
                           </button>
                         </td>
                       </tr>
-  
+                      <!-- 4 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo ">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 78</span>
-                          
+                        <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 78</span>
                         </td>
-                        <td>18 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">18 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -238,17 +238,14 @@
                           </button>
                         </td>
                       </tr>
-  
+                      <!-- 5 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo ">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 79</span>
-                          
+                        <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 79</span>
                         </td>
-                        <td>19 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">19 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-danger">Failed</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -259,17 +256,14 @@
                           </button>
                         </td>
                       </tr>
-  
+                      <!-- 6 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo ">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 80</span>
-                          
+                        <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 80</span>
                         </td>
-                        <td>20 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">20 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -280,19 +274,17 @@
                           </button>
                         </td>
                       </tr>
-  
+                      <!-- 7 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo ">
-                            <img src="./img/class-avatar.jpg" alt="">
+                         <td scope="row" class="px-3 text-start">
+                          <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                           </div>
                           <span class="px-2">Classe 81</span>
-                          
-                        </td>
-                        <td>21 Feb 2021</td>
-                        <td>20%</td>
-                        <td><span class="badge text-bg-danger">Failed</span></td>
-                        <td>
+                         </td>
+                         <td class="d-sm-none d-md-table-cell">21 Feb 2021</td>
+                         <td class="d-sm-none d-md-table-cell">20%</td>
+                          <td><span class="badge text-bg-danger">Failed</span></td>
+                          <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
                             <i class="fa-solid fa-pen"></i>
                           </button>
@@ -301,17 +293,14 @@
                           </button>
                         </td>
                       </tr>
-  
+                      <!-- 8 -->
                       <tr>
-                        <td scope="row" class="px-3 text-star d-flex py-3">
-                          <div class="image-logo">
-                            <img src="./img/class-avatar.jpg" alt="">
-                          </div>
-                          <span class="px-2">Classe 82</span>
-                          
+                        <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                            <span class="px-2">Classe 82</span>
                         </td>
-                        <td>22 Feb 2021</td>
-                        <td>20%</td>
+                        <td class="d-sm-none d-md-table-cell">22 Feb 2021</td>
+                        <td class="d-sm-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -325,7 +314,12 @@
   
                     </tbody>
                   </table>
+
                 </div>
+
+
+                <!-- nuova tabella -->
+
 
 
 

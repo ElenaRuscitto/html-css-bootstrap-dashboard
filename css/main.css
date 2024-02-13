@@ -122,12 +122,13 @@ img {
 /* TOP BLU */
 
 main .er-container{
-  width: 90%;
-  margin-left: 150px;
+  width:calc(100% - 150px);
+  /* margin-left: 150px; */
  } 
+
 .margin-main{
   margin-left: 150px;
-}
+} 
   
 .top-bar {
   background-color: rgb(27, 114, 232);
@@ -156,15 +157,13 @@ main .er-container{
  }
 
 /* PROSSIME CLASSI */
+
 .image-logo{
-  overflow: hidden;
+  object-fit: contain;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-}
 
-.image-logo img{
-  object-fit: contain;
 }
 
 .divisore {
@@ -195,16 +194,42 @@ main .er-container{
 }
 
 
+.d-none {
+  display: none;
+}
 
 
+.w-data {
+  width: 100px;
+}
 
+.w-roi {
+  width: 100px;
+}
 
+.w-stato {
+  width: 100px;
+}
+
+.w-azioni {
+  width: 100px;
+}
 
 
 
 
 
 /* MEDIA QUERY */
-@media screen and (max-whidth: 764px){
+@media screen and (max-whidth: 767px){
+
+  .w-stato,
+  .w-azioni {
+    width:calc(100% / 3);
+  }
+
+  .w-data,
+  .w-roi {
+    width: 0;
+  }
   
 }
