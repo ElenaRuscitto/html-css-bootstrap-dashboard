@@ -107,8 +107,9 @@ header .icon i{
 
 
 .admin {
-  height: 70%;
+  height: 90px;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -124,6 +125,18 @@ header .icon i{
   display: flex;
   align-items: end;
 } 
+
+.aside-icon {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-icon:hover {
+  background-color: #313030;
+  background-size: 10px;
+}
 
 /* /ASIDE */
 
