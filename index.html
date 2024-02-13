@@ -30,11 +30,12 @@
   <header>
 
     <nav class="navbar w-100 h-100 bg-body-tertiary">
-      <div class="container-fluid w-100 bg-white ">
+      <div class="container-fluid w-100 bg-white d-flex justify-content-between ">
         <div class="logo">
-          <a class="navbar-brand ">
-            <img src="./img/logo.svg" alt="logo">
-          </a>
+          <div class="">           
+              <img class="" src="./img/logo.svg" alt="logo">         
+          </div>
+              
         </div>
 
         
@@ -124,17 +125,154 @@
   </aside>
 
   <main>
-    <div class="er-container  margin-main debug">
+    <div class="er-container margin-main ">
       <!-- TOP BLU -->
-      <section class="top-bar debug">
-        <div class="container-fluid d-flex debug">
-          <div class="row w-100  debug">
-            <div class="col col-7  d-flex justify-content-between debug">
-              <div>Boolean</div>
-              <div>125</div>
+      <section class="top-bar ">
+        <div class="container-fluid d-flex">
+          <div class="row w-100 text-white flex-column-reverse flex-sm-row ">
+            <div class="col col-8">
+              <div class="row justify-content-between text-white flex-column flex-sm-row ">
+                <!-- parte di sx -->
+                <div class="col-12 col-md-8 py-2">              
+                  <div>
+                    <span class="fs-4">Boolean</span>
+                    <span class="pills badge rounded-pill">Piano Blaze</span>
+                  </div>
+                  <div>
+                    <span class="pills badge rounded-pill">3 app</span>
+                    <i class="arrow fa-solid fa-angles-right"></i>
+                    <span class="pills badge rounded-pill">Boolean mobile app</span>
+                    <span class="pills badge rounded-pill">Boolean web app</span>
+                    <span class="pills badge rounded-pill">Boolean blog app</span>
+                  </div>
+                </div>
+                <!-- studenti centrale -->
+                <div class="col-12 col-md-4 text-start py-2">
+                  <div class="">
+                    <span class="studenti">Studenti online negli ultimi 30 minuti</span>
+                    <p class="fs-4 text-start">125</p>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <div class="col col-5  d-flex justify-content-end debug">
-              Nuovo Studente +
+            <!-- parte di dx -->
+            <div class="col col-4 py-2 d-flex justify-content-center">
+              <span class="studenti">
+                    Nuovo Studente
+                    <!-- BTN ADD nuovo utente offcanvas -->
+                    <button class=" btn btn-outline-light px-2 py-1 ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end offcanv-full" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo utente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+
+                      <!-- OFFCANVAS -->
+                      <div class="offcanvas-body">
+                        <!-- Input form -->
+                        <form class="row g-3">
+                          <!-- Nome cognome -->
+                          <div class="col-6">
+                            <label for="inputEmail4" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="col-6">
+                            <label for="inputPassword4" class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="inputPassword4">
+                          </div>
+                          <!-- /Nome cognome -->
+
+                          <!-- EMail -->
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label for="basic-url" class="form-label">Email</label>
+                              <div class="input-group">
+                                <span class="input-group-text" id="basic-addon3">@</span>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label for="basic-url" class="form-label">Indirizzo Email</label>
+                              <div class="input-group">
+                                <span class="input-group-text" id="basic-addon3">@</span>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="col-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+
+                          <!-- /EMail -->
+
+                          <!-- Indirizzo -->
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+                          </div>
+                          <div class="col-6">
+                            <label for="inputAddress2" class="form-label">Cittá</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                          </div>
+                          <div class="col-4">
+                            <label for="inputState" class="form-label">Stato</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Scegli...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Cap</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                          <!-- /Indirizzo -->
+
+                          <!-- UPLOAD -->
+                          <div class="col-12">
+                            <div class="mb-3">
+                              <label for="formFile" class="form-label">Foto</label>
+                              <input class="form-control" type="file" id="formFile">
+                            </div>
+                          </div>
+                          <!-- /UPLOAD -->
+                          <!-- CHECK -->
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Seleziona per proseguire
+                              </label>
+                            </div>
+                          </div>
+                          <!-- /CHECK -->
+
+                          <!-- BTN -->
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Salva</button>
+                            <button type="reset" class="btn btn-warning">Svuota</button>
+                          </div>
+                          <!-- /BTN -->
+                        </form>
+                        <!-- /Input form -->
+                      </div>
+                      <!-- /OFFCANVAS -->
+                    </div> 
+                    <!-- BTN ADD nuovo utente offcanvas -->
+                  </span>
             </div>
           </div> 
       </div>
@@ -147,7 +285,7 @@
           <div class="row row-cols-1 row-cols-md-2">
 
 <!-- COL-SX -->
-            <div class="col col-md-8 debug">
+            <div class="col col-md-8">
               <!-- PROSSIME CLASSI -->
               <div class="box mt-2 rounded-2">
                 <h4 class="py-2 ps-3 mt-2">Prossime Classi</h4>
@@ -363,7 +501,7 @@
             </div>
            
 <!-- COL-DX -->
-            <div class="col col-md-4 debug">
+            <div class="col col-md-4">
                     
               <h4 class="box rounded-2 py-3 ps-3 mt-2">Todo</h4>
            

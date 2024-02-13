@@ -26,7 +26,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 2;
   color: var(--text-color-header);
 }
 
@@ -35,13 +35,13 @@ header i {
 }
 
 .search-bar{
-  width: 75%;
+  width: 70%;
   background-color: rgb(229, 229, 229);
 }
 
-header .logo,
+
 header .icon {
-  width: 10% ;
+  width: 120px ;
 }
 
 .spec{
@@ -100,7 +100,7 @@ header .icon i{
   position: fixed;
   top: 0px;
   left: 0;
-  z-index: 9998;
+  z-index: 1;
   height:calc(100vh - 70px);
   
 }
@@ -134,9 +134,16 @@ header .icon i{
 }
 
 .aside-icon:hover {
-  background-color: #313030;
+  background-color: #7b7a7a;
   background-size: 10px;
 }
+
+header.logo {
+  height: 70px;
+  width: 140px;
+  position: absolute;
+}
+
 
 /* /ASIDE */
 
@@ -153,11 +160,30 @@ header .icon i{
   
 .top-bar {
   background-color: rgb(27, 114, 232);
-  height: 20%;
   width: 100%;
   margin-top: 70px;
 } 
 
+.pills {
+  background-color: rgb(22, 91, 186);
+  font-size: .7rem;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: .6rem;
+}
+
+.pills:hover {
+  background-color: rgb(18, 50, 95);
+}
+
+.studenti {
+  font-size: .8rem;
+  margin: 0;
+  padding: 0;
+}
 /* /TOP BLU */
 
 
@@ -236,7 +262,9 @@ header .icon i{
   width: 100px;
 }
 
-
+.offcanvas-title {
+  z-index: 9999 ;
+}
 
 
 
@@ -261,6 +289,10 @@ header .icon i{
   .w-roi {
     width: 0;
   }
- 
+
+ .offcanv-full {
+  width: 100% !important;
+  z-index: 9999;
+ }
   
 }
