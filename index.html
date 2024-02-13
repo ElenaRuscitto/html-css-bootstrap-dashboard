@@ -46,18 +46,18 @@
         </div>
   
   
-        <div class="icon d-flex ">
-          <div class="icon-none">
-            <a href=""><i class="fa-solid fa-list"></i></a>
+        <div class="icon d-flex justify-content-between  ">
+          
+            <a href="" class="icon-none er-d-none d-md-inline "><i class="fa-solid fa-list"></i></a>
       
-            <a href=""><i class="fa-solid fa-circle-question px-2"></i></a>
+            <a href="" class="icon-none er-d-none d-md-inline"><i class="fa-solid fa-circle-question px-2"></i></a>
          
-            <a><i class="fa-solid fa-ellipsis-vertical"></i></a>
-          </div>
+            <a class="icon-none er-d-none d-md-inline"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          
 
 
-          <div class="dropdown notifiche">
-            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class=" notifiche fa-solid fa-bell"></i></button>
+          <div class="dropdown">
+            <span data-bs-toggle="dropdown" aria-expanded="false" class=""><i class="notifiche fa-solid fa-bell"></i></span>
             <ul class="dropdown-menu dropdown-menu-end mb-1">
               <li><a class="dropdown-item" href="#">Profilo</a></li>
               <li><a class="dropdown-item " href="#">Fatturazione</a></li>
@@ -66,7 +66,7 @@
             </ul>
 
           </div>
-                      
+                 
 
         </div>
   
@@ -78,36 +78,36 @@
 
   </header>
 
-  <aside class="aside">
+  <aside class="aside overflow-hidden ">
     <div class="container h-100 ">
 
-      <div class="row h-100 flex-column justify-content-between  text-white">
+      <div class="row mt-5 h-100 flex-column justify-content-between text-white">
 
-        <div class="col h-100 d-flex flex-column mt-4">
-          <div>
+        <div class="col h-100 d-flex flex-column mt-5">
+          <div class="aside-icon">
             <i class="fa-solid fa-house py-2 px-2 "></i>
-            <a href="" class="px-2 text-white text-decoration-none ">Home</a>
+            <a href="" class="px-2 text-white text-decoration-none d-none d-md-inline ">Home</a>
           </div>
         
         
-          <div>
+          <div class="aside-icon">
             <i class="fa-solid fa-chart-simple py-3 px-2 "></i>
-            <a href="" class="px-3 text-white text-decoration-none">Stats</a>
+            <a href="" class="px-3 text-white text-decoration-none d-none d-md-inline">Stats</a>
           </div>
                 
        
-          <div>
+          <div class="aside-icon">
             <i class="fa-solid fa-signal py-2 px-2 "></i>
-            <a href="" class="px-2 text-white text-decoration-none">Signals</a>
+            <a href="" class="px-2 text-white text-decoration-none d-none d-md-inline">Signals</a>
           </div>
         
         </div>
     
       
-        <div class="col h-100  py-2">
-          <div class="admin d-flex align-items-end">
+        <div class="col h-100 py-2">
+          <div class="admin d-flex align-items-end aside-icon">
             <i class="fa-solid fa-gear py-2 px-2 "></i>
-            <a href="" class="px-2 text-white text-decoration-none py-1">Admin</a>
+            <a href="" class="px-2 text-white text-decoration-none py-1 d-none d-md-inline">Admin</a>
           </div>
         </div>
 
@@ -124,8 +124,8 @@
   </aside>
 
   <main>
-    <div class="er-container margin-main debug">
-
+    <div class="er-container  margin-main debug">
+      <!-- TOP BLU -->
       <section class="top-bar debug">
         <div class="container-fluid d-flex debug">
           <div class="row w-100  debug">
@@ -157,23 +157,23 @@
                   <table class="table table-hover h-100 table-sm table-md">
                     <thead class="h-100 ">
                      <!-- 0 -->
-                      <tr>
+                      <tr class="px-2">
                         <th class="text-start px-3" scope="col">Nome</th>
-                        <th class="w-data d-sm-none d-md-table-cell">Data Inizio</th>
-                        <th class="w-roi d-sm-none d-md-table-cell">ROI</th>
+                        <th class="w-data er-d-none d-md-table-cell">Data Inizio</th>
+                        <th class="w-roi er-d-none d-md-table-cell">ROI</th>
                         <th class="w-stato">Stato</th>
                         <th class="w-azioni">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <!-- 1 -->
+                      <!-- 1 -->
+                      <tr class="px-2">
                         <td scope="row " class="text-start px-3">
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 75</span> 
                         </td>
-                        <td class="d-sm-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -190,8 +190,8 @@
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 76</span>
                         </td>
-                        <td class="d-sm-none d-md-table-cell">16 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">16 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -208,8 +208,8 @@
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 77</span>                        
                         </td>
-                        <td class="d-sm-none d-md-table-cell">17 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge bg-warning ">Process</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -226,8 +226,8 @@
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 78</span>
                         </td>
-                        <td class="d-sm-none d-md-table-cell">18 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">18 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -244,8 +244,8 @@
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 79</span>
                         </td>
-                        <td class="d-sm-none d-md-table-cell">19 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">19 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-danger">Failed</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -262,8 +262,8 @@
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 80</span>
                         </td>
-                        <td class="d-sm-none d-md-table-cell">20 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">20 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -276,22 +276,22 @@
                       </tr>
                       <!-- 7 -->
                       <tr>
-                         <td scope="row" class="px-3 text-start">
-                          <img src="./img/class-avatar.jpg" alt="" class="image-logo">
-                          </div>
-                          <span class="px-2">Classe 81</span>
+                          <td scope="row" class="px-3 text-start">
+                            <img src="./img/class-avatar.jpg" alt="" class="image-logo">
+                          <!-- </div> -->
+                            <span class="px-2">Classe 81</span>
+                          </td>
+                          <td class="er-d-none d-md-table-cell">21 Feb 2021</td>
+                          <td class="er-d-none d-md-table-cell">20%</td>
+                            <td><span class="badge text-bg-danger">Failed</span></td>
+                            <td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1">
+                              <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                          </td>
-                         <td class="d-sm-none d-md-table-cell">21 Feb 2021</td>
-                         <td class="d-sm-none d-md-table-cell">20%</td>
-                          <td><span class="badge text-bg-danger">Failed</span></td>
-                          <td>
-                          <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                            <i class="fa-solid fa-pen"></i>
-                          </button>
-                          <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                            <i class="fa-solid fa-trash-can"></i>
-                          </button>
-                        </td>
                       </tr>
                       <!-- 8 -->
                       <tr>
@@ -299,8 +299,8 @@
                             <img src="./img/class-avatar.jpg" alt="" class="image-logo">
                             <span class="px-2">Classe 82</span>
                         </td>
-                        <td class="d-sm-none d-md-table-cell">22 Feb 2021</td>
-                        <td class="d-sm-none d-md-table-cell">20%</td>
+                        <td class="er-d-none d-md-table-cell">22 Feb 2021</td>
+                        <td class="er-d-none d-md-table-cell">20%</td>
                         <td><span class="badge text-bg-success ">Done</span></td>
                         <td>
                           <button type="button" class="btn btn-outline-secondary px-2 py-1">
@@ -316,218 +316,9 @@
                   </table>
 
                 </div>
-
-
-                <!-- nuova tabella -->
-
-
-
-
-
-                <!-- <h4 class="py-2 ps-3 mt-2">Prossime Classi</h4>
-                <div class="divisore-big"></div>
-                <div class="row py-3 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 ">Nome</div>
-                  <div class="col col-2 px-3">Data Inizio</div>
-                  <div class="col col-1 ">ROI</div>
-                  <div class="col col-1 px-3">Stato</div>
-                  <div class="col col-2 px-4 text-center">Azioni</div>
-                  
-                </div>
-                2
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 75</span>
-                  </div>
-                  <div class="col col-2  ">15 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center">
-                    <span class="badge text-bg-success ">Done</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                3
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 76</span>
-                  </div>
-                  <div class="col col-2  ">16 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center">
-                    <span class="badge text-bg-success">Done</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                 4
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 77</span>
-                  </div>
-                  <div class="col col-2  ">17 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 ">
-                    <span class="badge bg-warning text-center spec">Process</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                5
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 78</span>
-                  </div>
-                  <div class="col col-2  ">18 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center ">
-                    <span class="badge text-bg-success">Done</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
- 
-                6
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 79</span>
-                  </div>
-                  <div class="col col-2  ">19 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center">
-                    <span class="badge text-bg-danger spec2">Failed</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary  px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                7
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 80</span>
-                  </div>
-                  <div class="col col-2  ">20 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center">
-                    <span class="badge text-bg-success">Done</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                8
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 81</span>
-                  </div>
-                  <div class="col col-2  ">21 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center">
-                    <span class="badge text-bg-danger spec2">Failed</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>
-
-                9
-                <div class="divisore"></div>
-                <div class="row py-2 bg-white flex-wrap flex-shrink-1">
-                  <div class="col col-6 ps-4 d-flex ">
-                    <div class="image-logo">
-                      <img src="./img/class-avatar.jpg" alt="">
-                    </div>
-                    <span class="px-2">Classe 82</span>
-                  </div>
-                  <div class="col col-2  ">22 Feb 2021</div>
-                  <div class="col col-1 ">20%</div>
-                  <div class="col col-1 text-center">
-                    <span class="badge text-bg-success">Done</span>
-                  </div>
-                  <div class="col col-2 px-4 text-center">
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary px-2 py-1">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </button>
-                  </div>
-                </div>             -->
   
               </div>
-               <!-- /PROSSIME CLASSI -->
+              
 
                <!-- FAQ -->
               <div class="box rounded-2">
